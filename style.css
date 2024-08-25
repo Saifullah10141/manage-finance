@@ -49,7 +49,7 @@
     align-items: center;
     
 }
-.container1 .div-11, .container1 .div-12,.container1 .reset-all{
+.container1 .div-11, .container1 .div-12{
     border: 3px solid grey;
     border-radius: 30px;
     padding: 13px;
@@ -68,6 +68,11 @@
 .reset-all{
     width: 130px;
     cursor: pointer;
+    color: green;
+    background-color: black;
+    border: 3px solid grey;
+    border-radius: 30px;
+    padding: 13px;
 }
 .total-salary{
     width: 180px;
@@ -111,10 +116,7 @@
     background-color:whitesmoke;
 }
 
-.reset-deleted{
-    border: none;
-    background-color:whitesmoke;
-}
+
 .div-01 {
     position: fixed;
     bottom: 50px;
@@ -137,17 +139,23 @@
 .div-01 {
     transition: background-color 2s ease-in-out;
 }
-.container3 div{
+.container3 .div-31, .container3 .div-32, .container3 .div-33{
     border: 3px solid grey;
     border-radius: 30px;
     padding: 15px;
     background-color:whitesmoke;
 }
+
 button{
     font-size: 15px;
 }
-.reset-deleted, .div-34{
+.reset-deleted{
     cursor: pointer;
+    background-color: black;
+    color: green;
+    padding: 15px;
+    border: 3px solid grey;
+    border-radius: 30px;
 }
 .container45{
     background-color: rgb(202, 237, 61);
@@ -183,6 +191,7 @@ button{
     right: 25px;
     text-align: center;
 }
+
 .expense-input{
     border: 3px solid grey;
     border-radius: 30px;
@@ -245,12 +254,17 @@ button{
     position: relative;
     right: 20px;
 }
+.js-5{
+    border: 3px solid grey;
+    border-radius: 30px;
+    padding: 13px;
+    background-color: black;
+    color: green;
+    width: 130px;
+    cursor: pointer;
+}
 @media (min-width: 1192px){
     .aaaaa{
         width: 100%;
     }
 }
-
-
-
-
