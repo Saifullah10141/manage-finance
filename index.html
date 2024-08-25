@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance</title>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="aaaaa">
+            <div class="header-container">
+                <div class="manage-finance">Manage Your Finance</div>
+                <a href="#" class="anchor"><div class="about-us">About US</div></a>
+                <a href="#" class="anchor"><div class="contact-us">Contact US</div></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="aaaaa">
+            <div class="container123">
+                <div class="container1" style="height: 80px;">
+                    <div class="div-13">
+                        <input type="number" class="total-salary" placeholder="Enter your Monthly salary">
+                        <button class="add-salary">Add</button>
+                    </div>
+                    <div class="div-11"><span>Current Balance: </span>
+                    <span class="total-balance"></span></div>
+                    <div class="div-12"><span>Total Transactions amount: </span>
+                    <span class="expenses"></span></div>
+                    <button class="reset-all">Reset All</button>
+                </div>
+
+                <div class="container2" style="height: 80px;">
+                    <div class="div-23">
+                        <div class="salary-text"><pre>Salary: </pre></div>
+                        <div class="salary"></div>
+                    </div>
+                    <div class="div-24">
+                        <span>Total Transactions: </span>
+                        <span class="transactions"></span>
+                    </div>
+                    <div class="div-21">
+                        <span>Debit Transactions amount: </span>
+                        <span class="debit-expenses"></span>
+                    </div>
+                    <div class="div-22">
+                        <span>Credit Transactions amount: </span>
+                        <span class="credit-expenses"></span>
+                    </div>
+                    
+                </div>
+            
+                <div class="container3">
+                    <div class="div-31">
+                        <span>Days Left of Month: </span>
+                        <span class="left-days"></span>
+                    </div>
+                    <div class="div-32">
+                        <span>Total Days of Month: </span>
+                        <span class="total-days"></span>
+                    </div>
+                    <div class="div-33">
+                        <span>Transactions amount: </span>
+                        <span class="deleted-balance"></span>
+                    </div>
+                    <div class="div-34">
+                        <button class="reset-deleted">Reset Deleted Amount</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container45">
+                <div class="container4">
+                    <span class="expense">Usage Detail</span>
+                    <span class="expense-amount">Amount</span>
+                    <span class="date">Date</span>
+                    <span class="expense-method">Debit/Credit</span>
+                </div>
+                
+                <div class="container5">
+                    <input type="text" class="expense-input" required>
+                    <input type="number" class="amount-input" required>
+                    <span class="date1">Date</span>
+                    <select name="method-input" id="" class="method-input">
+                        <option class="debit" value="debit" style="color: #FF0000">Debit</option>
+                        <option class="credit" value="credit" style="color: #00FF00;">Credit</option>
+                    </select>
+                    <button class="add">Add</button>
+                </div>
+            </div>
+
+            <div class="div-01">
+                <span>Financial</span>
+                <span>Health</span>
+                <div><span class="financial-health"></span>
+                <span>%</span></div>
+            </div>
+
+            <div class="display-data"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
