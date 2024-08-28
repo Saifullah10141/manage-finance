@@ -35,10 +35,10 @@ add.addEventListener("click",() =>{
     let description = document.querySelector(".expense-input").value || "Expense";
     let expenseAmount = document.querySelector(".amount-input").value || 0;
     let expenseMethod = document.querySelector(".method-input").value || "debit";
-    data.push(description);
-    data.push(expenseAmount);
-    data.push(expenseMethod);
-    data.push(currentDate());
+    data.unshift(currentDate());
+    data.unshift(expenseMethod);
+    data.unshift(expenseAmount);
+    data.unshift(description);
     if (expenseMethod === "credit"){amounts.creditExpenses += Number(expenseAmount)
         expenseAmount = -(expenseAmount)}else
         {amounts.debitExpenses += Number(expenseAmount)}
