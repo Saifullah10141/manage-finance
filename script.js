@@ -124,7 +124,7 @@ function display(){
 }
 
 function dltDb(dat1, i){
-    amounts.deletedBalance += dat1
+    amounts.deletedBalance += Math.abs(dat1)
     amounts.expenses += dat1
     amounts.debitExpenses -= dat1
     amounts.transactions -= 1
@@ -137,7 +137,7 @@ function dltDb(dat1, i){
     display();
 }
 function dltCr(dat1, i){
-    amounts.deletedBalance += dat1
+    amounts.deletedBalance += Math.abs(dat1)
     amounts.expenses -= dat1
     amounts.creditExpenses -= dat1
     amounts.transactions -= 1
